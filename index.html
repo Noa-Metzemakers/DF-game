@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DF-game — de games van ABYSSA: het tekstspel Het Pad van Keldrin en de 3D-game De Vijf Relikwieën in het Afgrondkoninkrijk.">
+    <title>DF-game — de games van ABYSSA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="achtergrond" aria-hidden="true">
+        <div class="achtergrond-laag actief"><img src="assets/bg/VERT_DF2-1.webp" alt=""></div>
+        <div class="achtergrond-laag"><img src="assets/bg/VERT_DF2-2.webp" alt=""></div>
+        <div class="achtergrond-laag"><img src="assets/bg/malagor-walk.webp" alt=""></div>
+        <div class="achtergrond-laag"><img src="assets/bg/trio-play.webp" alt=""></div>
+        <div class="achtergrond-overlay"></div>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+    <p class="fluistering" id="fluistering" aria-hidden="true"></p>
+
+    <header class="site-header">
+        <a class="logo" href="index.html">DF-GAME</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menu openen" aria-expanded="false">&#9776;</button>
+        <nav class="site-nav" id="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="spel.html">Spel</a></li>
+                <li><a href="game3d.html">3D-game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pagina-hero">
+            <p class="hero-kicker">de games van het Afgrondkoninkrijk</p>
+            <h1>DF-GAME</h1>
+            <p class="hero-tag">
+                Twee manieren om het donker van ABYSSA in te gaan: een fluisterend tekstspel
+                waarin elke keuze telt — of een 3D-avontuur waarin je Malagor zelf op de
+                gebroken troon verslaat. Kies je pad, reiziger.
+            </p>
+        </section>
+
+        <section class="sectie">
+            <p class="sectie-kicker">kies je spel</p>
+            <h2>Wat speel je?</h2>
+            <div class="kaarten">
+                <article class="kaart reveal">
+                    <h3>Het Pad van Keldrin</h3>
+                    <p>Een interactief kies-je-pad tekstspel. Jij bent Keldrin: verzamel balans tussen licht en duisternis, verlies herinneringen aan wie je liefhad, en ontrafel 9 einden — waarvan 2 geheim.</p>
+                    <a class="kaart-link" href="spel.html">Speel het spel &rarr;</a>
+                </article>
+                <article class="kaart reveal">
+                    <h3>De Vijf Relikwieën (3D)</h3>
+                    <p>Een third-person 3D-avontuur. Verzamel de vijf gouden relikwieën in het mistige land, praat met Grimwick en Varynth, breek de eed bij de poort en versla Malagor op de gebroken troon.</p>
+                    <a class="kaart-link" href="game3d.html">Speel de 3D-game &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="sectie">
+            <p class="sectie-kicker">hoe werkt het?</p>
+            <h2>Besturing</h2>
+            <div class="verhaal reveal">
+                <p><strong>Het Pad van Keldrin (tekstspel):</strong> lees en klik op een keuze. Sommige keuzes verschijnen alleen als je de juiste dingen hebt gezien of gevraagd.</p>
+                <p><strong>De Vijf Relikwieën (3D):</strong> WASD / pijltjes — bewegen &middot; muis slepen — camera &middot; spatie of klik — zwaard-aanval &middot; shift — rennen &middot; E — praten met personages. Op een touchscreen verschijnt automatisch een joystick en knoppen.</p>
+                <p>Beide games werken in Chrome, Edge en Firefox. De 3D-game vereist WebGL en laadt Three.js via een CDN (internetverbinding nodig).</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="jaar"></span> Noa Metzemakers &middot; DF-game &mdash; opgenomen in het donker</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
